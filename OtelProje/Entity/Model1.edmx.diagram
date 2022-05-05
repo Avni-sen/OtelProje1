@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="799585e384f34b40a24962f39b867f32" Name="Diagram1" ZoomLevel="77">
+        <EntityTypeShape EntityType="DbOtelModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_Birim" Width="1.5" PointX="8.375" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_Departman" Width="1.5" PointX="8.375" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_Durum" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_Gorev" Width="1.5" PointX="10.625" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_Kasa" Width="1.5" PointX="8.375" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_Kur" Width="1.5" PointX="8.375" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_Misafir" Width="1.5" PointX="8.375" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_Oda" Width="1.5" PointX="6" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_Personel" Width="1.5" PointX="6.125" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_Telefon" Width="1.5" PointX="8.375" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_Ulke" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_Urun" Width="1.5" PointX="10.625" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_UrunGrup" Width="1.5" PointX="8.375" PointY="28.25" IsExpanded="true" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Birim_Tbl_Durum" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Departman_Tbl_Durum" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Gorev_Tbl_Departman" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Personel_Tbl_Departman" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Gorev_Tbl_Durum" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Kasa_Tbl_Durum" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Kur_Tbl_Durum" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Misafir_Tbl_Durum" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Oda_Tbl_Durum" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Personel_Tbl_Durum" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Telefon_Tbl_Durum" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Urun_Tbl_Durum" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_UrunGrup_Tbl_Durum" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Urun_Tbl_UrunGrup" ManuallyRouted="false" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Personel_Tbl_Gorev" />
+        <EntityTypeShape EntityType="DbOtelModel.ilceler" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DbOtelModel.iller" Width="1.5" PointX="2.75" PointY="3.75" />
+        <AssociationConnector Association="DbOtelModel.FK_ilceler_iller1" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Misafir_ilceler1" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Misafir_iller1" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_UrunHareket" Width="1.5" PointX="12.875" PointY="16.625" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_UrunHareket_Tbl_Personel" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_UrunHareket_Tbl_Urun" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_Rezarvasyon" Width="1.5" PointX="10.625" PointY="15" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Rezarvasyon_Tbl_Durum" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Rezarvasyon_Tbl_Misafir" />
+        <AssociationConnector Association="DbOtelModel.FK_Tbl_Rezarvasyon_Tbl_Oda" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_YeniKayit" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbl_OnRezervasyon" Width="1.5" PointX="5.375" PointY="4.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
